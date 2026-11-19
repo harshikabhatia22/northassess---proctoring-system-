@@ -19,6 +19,11 @@ docker compose -f docker-compose.production.yml run --rm api alembic upgrade hea
 docker compose -f docker-compose.production.yml up --build -d
 ```
 
+For the Render Docker Web Service, set the **Docker Command** to `/app/start-render.sh`.
+That script applies Alembic migrations and then starts the API, avoiding shell-quoting
+issues in the dashboard. It is intended for this single-instance deployment; use a
+separate one-off migration step before scaling the API to multiple instances.
+
 Set `BOOTSTRAP_ADMIN_EMAIL` and `BOOTSTRAP_ADMIN_PASSWORD` only for first-admin creation, call `POST /api/v1/auth/bootstrap-admin` once through the protected HTTPS origin, then remove both values and recreate the API container. Verify admin login and the role-protected audit endpoint.
 
 ## Operations to complete before inviting students

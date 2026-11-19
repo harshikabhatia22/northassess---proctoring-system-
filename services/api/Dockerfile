@@ -10,9 +10,12 @@ COPY pyproject.toml uv.lock ./
 COPY app ./app
 COPY alembic.ini ./
 COPY migrations ./migrations
+COPY start-render.sh ./start-render.sh
 RUN uv sync --locked --no-dev
 
-RUN useradd --create-home --uid 10001 appuser && chown -R appuser:appuser /app
+RUN chmod 755 /app/start-render.sh \
+    && useradd --create-home --uid 10001 appuser \
+    && chown -R appuser:appuser /app
 USER appuser
 
 EXPOSE 8000
