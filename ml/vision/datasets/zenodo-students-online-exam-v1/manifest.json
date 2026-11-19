@@ -1,0 +1,54 @@
+{
+  "dataset_id": "zenodo-students-online-exam-v1",
+  "title": "Students' Abnormal Behavior in Online Exam Dataset",
+  "canonical_url": "https://zenodo.org/records/14606173",
+  "doi": "10.5281/zenodo.14606173",
+  "creator": "Muhanad Alkhalisy",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_record_observed": true,
+  "retrieved_at": "2026-11-18",
+  "archive_filename": "Dataset_Students_Behavior_Online_Exam_Org.zip",
+  "archive_size_recorded": "833.8 MB",
+  "published_md5": "78fde2372a5a58efba55ed4d47039429",
+  "local_sha256": "ca94adccd9745f819d912435c68197adfe59bca3a0f644b5c36a92f522dffe52",
+  "local_archive_audited": true,
+  "archive_md5_verified": true,
+  "archive_integrity_verified": true,
+  "classes_as_described": [
+    "mobile device use",
+    "hand movement",
+    "eye movement",
+    "mouth opening",
+    "looking sideways"
+  ],
+  "annotation_format_as_described": "YOLO DarkNet53 COCO style",
+  "observed_class_names_by_id": {
+    "0": "eye_movement",
+    "1": "hand_move",
+    "2": "mobile_use",
+    "3": "side_watching",
+    "4": "mouth_open"
+  },
+  "observed_archive_counts": {
+    "images": 5575,
+    "labeled_images": 5494,
+    "unlabeled_test_images": 81,
+    "annotation_instances": 5511,
+    "invalid_boxes": 1,
+    "cross_split_exact_duplicate_groups": 5,
+    "filename_derived_groups_shared_by_train_and_valid": 38
+  },
+  "known_limitations": [
+    "The archive contains 5,575 images, which differs from the associated paper's reported image counts; the paper also contains conflicting annotation-format descriptions.",
+    "The dataset describes observable behaviors and does not establish misconduct or intent.",
+    "The paper describes participants from one university; representativeness is limited.",
+    "Participant/session IDs are not included in the archive. Filename-derived source groups are provisional and do not establish person-independent splits.",
+    "The supplied train/valid splits share all 38 filename-derived source groups; the supplied test split has no labels and contains five exact duplicate images from train/valid.",
+    "One zero-width box is invalid. The data.yaml paths do not resolve to the archive's split directories.",
+    "The paper discusses consent/privacy but does not provide clear consent/ethics approval evidence for these images. The CC BY 4.0 record license does not establish participant consent."
+  ],
+  "provenance_reviewed": false,
+  "research_training_performed": true,
+  "deployment_approved": false
+}

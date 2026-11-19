@@ -1,0 +1,27 @@
+[project]
+name = "northstar-vision-ml"
+version = "0.1.0"
+description = "Provenance-gated computer vision dataset audit and training pipeline"
+requires-python = ">=3.9"
+dependencies = [
+  "joblib>=1.4,<2",
+  "fastapi>=0.115,<1",
+  "numpy>=2.0,<3",
+  "opencv-python>=4.13,<5",
+  "scikit-learn>=1.6,<2",
+  "uvicorn>=0.34,<1",
+]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+
+[project.scripts]
+northstar-vision = "northstar_vision.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

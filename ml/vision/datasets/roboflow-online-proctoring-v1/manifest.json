@@ -1,0 +1,41 @@
+{
+  "dataset_id": "roboflow-online-proctoring-v1",
+  "canonical_source": "https://universe.roboflow.com/online-exam-cheating-detection-kvdul/online-proctoring-system-x27ou-e7abr",
+  "version_page": "https://universe.roboflow.com/online-exam-cheating-detection-kvdul/online-proctoring-system-x27ou-e7abr/dataset/1",
+  "source_owner": "Online Exam Cheating Detection",
+  "version": 1,
+  "record_stated_license": "CC BY 4.0",
+  "license_review_status": "needs_confirmation_before_redistribution_or_deployment",
+  "task": "object_detection",
+  "reported_classes": [
+    "book",
+    "laptop",
+    "cell phone",
+    "person",
+    "headphone",
+    "tv"
+  ],
+  "reported_version_total_images_including_generated_augmentation": 25173,
+  "reported_version_split": {
+    "train": 22440,
+    "valid": 1822,
+    "test": 911
+  },
+  "reported_overview_annotated_images": 10213,
+  "reported_description_images_before_augmentation": 15489,
+  "reported_augmentation_outputs_per_training_example": 3,
+  "archive_sha256": null,
+  "archive_downloaded": false,
+  "participant_or_session_ids_documented": false,
+  "human_subject_consent_documented": false,
+  "intended_local_use": "Supplemental prohibited-object detection research only; not a cheating label or person-level behavior dataset.",
+  "provenance_reviewed": false,
+  "deployment_approved": false,
+  "notes": [
+    "Universe version page lists CC BY 4.0, but the project description says licensing terms should be defined in Kaggle settings; resolve the discrepancy with the source owner before redistribution or deployment.",
+    "Universe pages report different image counts (10,213, 15,489, and 25,173 including generated augmentation); verify archive contents and split provenance after download.",
+    "No participant/session identifiers or consent/ethics statement were found on the public project page.",
+    "The version split may contain generated variants of the same source image across splits; audit for near-duplicates before evaluation.",
+    "The Roboflow export page was reachable, but the download request timed out in this environment."
+  ]
+}

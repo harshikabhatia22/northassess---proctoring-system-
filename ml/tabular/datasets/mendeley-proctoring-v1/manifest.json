@@ -1,0 +1,31 @@
+{
+  "dataset_name": "Students suspicious behaviors detection dataset for AI-powered online exam proctoring",
+  "source_url": "https://data.mendeley.com/datasets/39xs8th543/1",
+  "doi": "10.17632/39xs8th543.1",
+  "version": 1,
+  "license": "CC BY 4.0 (as stated on the dataset record; file-level metadata still requires verification)",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_evidence": "https://data.mendeley.com/datasets/39xs8th543/1",
+  "license_reviewed": true,
+  "attribution": "Muhammad Kamal Hossen and Mohammad Shorif Uddin, Students suspicious behaviors detection dataset for AI-powered online exam proctoring, Mendeley Data, version 1, DOI: 10.17632/39xs8th543.1",
+  "retrieved_at": "2026-11-18",
+  "file_path": "Students suspicious behaviors detection dataset_V1.csv",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "target_column": "",
+  "positive_label": 1,
+  "reported_record_count": 5500,
+  "reported_archive_sha256": "83d887700e227d0bf622dc1ca7626fe7f7c0de6dd5d9074acdf11ffc0b882e81",
+  "group_column": null,
+  "excluded_columns": [],
+  "label_semantics": "Not yet verified against the supplied data dictionary and source files. Dataset annotation labels are not ground truth for misconduct or intent.",
+  "limitations": [
+    "Candidate only: actual files and their file-level license metadata have not been inspected.",
+    "The public record describes simulated frame-level behavior and labels derived from manual observation logs/session context.",
+    "The record description says 38 attributes while its reproduction section says 37 features per row; resolve this before training.",
+    "A group/person/session identifier and label construction protocol have not been verified.",
+    "A row-random split is not evidence of generalization across people or exam sessions.",
+    "This model is exploratory research only and must never drive grading, accusation, discipline, or automatic suspicion flags."
+  ],
+  "research_only": true,
+  "provenance_reviewed": false
+}

@@ -1,0 +1,32 @@
+[project]
+name = "northstar-tabular-ml"
+version = "0.1.0"
+description = "Reproducible, provenance-gated exploratory tabular ML pipeline"
+requires-python = ">=3.11"
+dependencies = [
+  "joblib>=1.4,<2",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<4",
+  "scikit-learn>=1.7,<2",
+]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
+
+[project.scripts]
+northstar-tabular = "northstar_tabular.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<9", "ruff>=0.8,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

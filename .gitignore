@@ -1,0 +1,28 @@
+# JavaScript
+node_modules/
+apps/web/dist/
+apps/web/.vite/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local configuration and generated artifacts
+.env
+.env.*
+!.env.example
+artifacts/**
+!artifacts/.gitkeep
+/ml/tabular/data/
+/ml/vision/data/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
